@@ -78,7 +78,7 @@ tokens = [
     'STRING',
     'IDENTIFIER',
     'COMMENT',
-
+    'SPACE'
 ]
 
 tokens += list(reserved.values()) + special_chars + operators
@@ -130,6 +130,7 @@ class_type_map = {
     "identifier": ['ID'],
     "integer_number": ['INTEGER'],
     "float_number": ['REAL_NUMBER'],
+    "string": ["STRING"],
     'special_char': special_chars,
     "comment": ['COMMENT'],
     "operator": operators,

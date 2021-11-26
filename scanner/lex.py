@@ -1,9 +1,11 @@
+import os
+
 from ply import lex
-from syntax_highlighter import SyntaxHighlighter
 import statics
+import os
 
 
-class Scanner:
+class Lexer:
     def __init__(self, filename):
         self.filename = filename
         self.lexer = lex.lex(module=self, debug=True)
@@ -15,12 +17,12 @@ class Scanner:
     tokens = statics.tokens
 
     # TOKENS
-    t_STRING = r'\"*\"'
+    t_STRING = r'("(\\"|[^"])*")|(\'(\\\'|[^\'])*\')'
     t_PLUS = r'\+'
     t_MINUS = r'-'
     t_TIMES = r'\*'
     t_DIVIDE = r'/'
-    t_EQUALS = r'='
+    t_EQUALS = r'=='
     t_LPAREN = r'\('
     t_RPAREN = r'\)'
     t_LBRACE = r'{'
@@ -56,6 +58,8 @@ class Scanner:
     t_TAB = r'\t'
     t_BACKSLASH = r'\\'
 
+    t_SPACE = r'\s+'
+
     # RESERVED WORDS
     t_LET = r'let'
     t_VOID = r'void'
@@ -84,11 +88,14 @@ class Scanner:
     t_PRINT = r'print'
     t_LEN = r'len'
 
-    t_ignore = ' \t'
+    t_ignore = ''
 
     def t_REAL_NUMBER(self, t):
-        r'[-+]?[0-9]+(\.([0-9]+)?([eE][-+]?[0-9]+)?|[eE][-+]?[0-9]+)'
-        t.value = float(t.value)
+        r'([-+]?[0-9]+(\.([0-9]+)?([eE][-+]?[0-9]+)?|[eE][-+]?[0-9]+))|0x[0-9A-F]+'
+        try:
+            t.value = float(t.value)
+        except ValueError:
+            t.value = float.fromhex(t.value)
         return t
 
     def t_INTEGER(self, t):
@@ -104,6 +111,8 @@ class Scanner:
     def t_NEW_LINE(self, t):
         r'\n+'
         t.lexer.lineno += len(t.value)
+        t.type = 'NEW_LINE'
+        return t
 
     def t_ID(self, t):
         r'[a-zA-Z_][a-zA-Z_0-9]*'
@@ -115,19 +124,3 @@ class Scanner:
         t.lexer.skip(1)
 
 
-def main():
-    scanner = Scanner('input.cool')
-    scanner.tokenize()
-    syntax_highlighter = SyntaxHighlighter()
-    while True:
-        token = scanner.lexer.token()
-        if not token:
-            break
-        print(token)
-        syntax_highlighter.highlight(token)
-
-    syntax_highlighter.flush()
-
-
-if __name__ == '__main__':
-    main()
