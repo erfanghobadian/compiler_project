@@ -20,7 +20,7 @@ class Scanner:
 
 
 if __name__ == '__main__':
-    scanner = Scanner("tests/input1.cool")
+    scanner = Scanner("../tests/input1.cool")
     scanner.run()
-    scanner = Scanner("tests/input2.cool")
+    scanner = Scanner("../tests/input2.cool")
     scanner.run()

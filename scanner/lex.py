@@ -1,9 +1,6 @@
 import os
-
 from ply import lex
-import statics
-import os
-
+from . import statics
 
 class Lexer:
     def __init__(self, filename):
@@ -29,7 +26,7 @@ class Lexer:
     t_RBRACE = r'}'
     t_LBRACKET = r'\['
     t_RBRACKET = r'\]'
-    t_COLON = r','
+    t_COMMA = r','
     t_SEMICOLON = r';'
     t_DOT = r'\.'
     t_AND = r'&&'
@@ -99,7 +96,7 @@ class Lexer:
         return t
 
     def t_INTEGER(self, t):
-        r'\d+'
+        r'[-]?[0-9]+'
         t.value = int(t.value)
         return t
 
@@ -122,5 +119,24 @@ class Lexer:
     def t_error(self, t):
         print("Illegal character '%s'" % t.value[0])
         t.lexer.skip(1)
+
+    def get_token(self):
+        self.tokenize()
+        tokens = []
+        while True:
+            token = self.lexer.token()
+            if not token:
+                break
+            if token.type in statics.types:
+                token.type = 'TYPE'
+            elif token.type in statics.constants:
+                token.type = 'CONSTANT'
+            elif token.type in statics.parser_operators:
+                token.type = 'OPERATOR'
+            tokens.append(token)
+
+        for t in tokens:
+            yield t
+
 
 
