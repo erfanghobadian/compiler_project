@@ -45,6 +45,6 @@ class Main {
     rof
     let Sort s;
     items = s.bubbleSort(rawItems);
-    printArray();
+    x = printArray();
   }
 }

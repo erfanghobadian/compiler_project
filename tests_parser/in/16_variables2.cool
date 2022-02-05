@@ -1,4 +1,8 @@
 class main {
-    let real[]  a;
-    let bool[]  Bool;
+    let int a;
+    void test() {
+        a = in_int();
+        print(a * a * a);
+
+    }
 }

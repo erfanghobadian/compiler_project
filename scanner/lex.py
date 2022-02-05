@@ -5,7 +5,7 @@ from . import statics
 class Lexer:
     def __init__(self, filename):
         self.filename = filename
-        self.lexer = lex.lex(module=self, debug=True)
+        self.lexer = lex.lex(module=self, debug=False)
 
     def tokenize(self):
         file = open(self.filename, 'r')
@@ -84,6 +84,8 @@ class Lexer:
     t_IN_INT = r'in_int'
     t_PRINT = r'print'
     t_LEN = r'len'
+    t_TRUE = r'true'
+    t_FALSE = r'false'
 
     t_ignore = ''
 
@@ -127,12 +129,16 @@ class Lexer:
             token = self.lexer.token()
             if not token:
                 break
+            token.ptype = token.type
             if token.type in statics.types:
-                token.type = 'TYPE'
+                token.ptype = 'TYPE'
             elif token.type in statics.constants:
-                token.type = 'CONSTANT'
+                token.ptype = 'CONSTANT'
             elif token.type in statics.parser_operators:
-                token.type = 'OPERATOR'
+                token.ptype = 'OPERATOR'
+            if token.type in ['TRUE', 'FALSE']:
+                token.type = 'BOOLEAN'
+                token.value = 1 if token.value == 'true' else 0
             tokens.append(token)
 
         for t in tokens:

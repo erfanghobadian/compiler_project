@@ -24,3 +24,7 @@ if __name__ == '__main__':
     scanner.run()
     scanner = Scanner("../tests/input2.cool")
     scanner.run()
+    scanner = Scanner("../tests/phase1_test1.cool")
+    scanner.run()
+    scanner = Scanner("../tests/phase1_test2.cool")
+    scanner.run()

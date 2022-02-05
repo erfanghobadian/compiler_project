@@ -1,0 +1,725 @@
+<html>
+ <head>
+  <style>
+   .background {
+        background-color: #222222;
+    }
+    .reserved_keyword {
+        color: #FC618D;
+    }
+    .identifier {
+        color: #FFFFFF;
+    }
+    .integer_number {
+        color: #F59762;
+    }
+    .float_number {
+        color: #F59762;
+        font-style: italic;
+    }
+    .string {
+        color: #FCE566;
+    }
+
+    .special_char {
+        color: #EE82EE;
+        font-style: italic;
+    }
+
+    .comment {
+        color: #69676C;
+    }
+
+    .operator {
+        color: #00FFFF;
+    }
+
+    .error {
+        color: #FF0000;
+    }
+  </style>
+ </head>
+ <body class="background">
+  <span class="comment">
+   // Keywords
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   void
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   real
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   bool
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   string
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="reserved_keyword">
+   static
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   class
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   for
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   rof
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   loop
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   pool
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="reserved_keyword">
+   while
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   break
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   continue
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   if
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   fi
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   else
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="reserved_keyword">
+   then
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   new
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   Array
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   return
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   in_string
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   in_int
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="reserved_keyword">
+   print
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   len
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   // Identifier
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="identifier">
+   Hamid123
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="identifier">
+   A_Variable_For__Test
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   // Not a Identifier
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="integer_number">
+   123
+  </span>
+  <span class="identifier">
+   Hamid
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="identifier">
+   __Var
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="identifier">
+   Hamid12345678_12345678_12345678ANewIdentifier
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /* Decimal Int */
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="integer_number">
+   1689
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   129
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   0
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   23
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /// Hex
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   0.0
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="float_number">
+   19.0
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   0
+  </span>
+  <span class="identifier">
+   X12
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   0
+  </span>
+  <span class="identifier">
+   xff
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /***  Real  ***/
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   108.2188
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   0.23
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   3.141592
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   21.0
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   0.0
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /***  Not Real ***/
+  </span>
+  <span>
+   &nbsp;&nbsp;
+  </span>
+  <span class="operator">
+   .
+  </span>
+  <span class="integer_number">
+   12
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   .
+  </span>
+  <span class="integer_number">
+   2
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /* Scientific
+   <br>
+   Notation
+   <br>
+   */
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   6.67e-11
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   inf
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   inf
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="float_number">
+   5e-55
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /* Not Scientific
+   <br>
+   Notation
+   <br>
+   */
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   .
+  </span>
+  <span class="float_number">
+   9.8e+60
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /// This is a single line comment ///
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   // Operators
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="comment">
+   // And
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="comment">
+   // Punctuations
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   +
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   -
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   *
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   /
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   +=
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   -=
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   *=
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   /=
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   ++
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   --
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   &lt;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   &lt;=
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   &gt;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   &gt;=
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   !=
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ==
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   %
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   &amp;&amp;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ||
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   &amp;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   |
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   ^
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   !
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   .
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   [
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ]
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   {
+  </span>
+  <span class="operator">
+   }
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span class="comment">
+   /******StringsAndSpecialChars******/
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="comment">
+   // Without special characters:
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="string">
+   "Ali"
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="string">
+   "Hamid  And  Abbas"
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="comment">
+   // With special chatacters:
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="string">
+   "Hamid has a \"BIG\" car\tto go to his work"
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="string">
+   "Asghar says \'Ghahreman\' is not my last film.\n"
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="string">
+   "Please use \\n with printf instead of cout with endl"
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+ </body>
+</html>

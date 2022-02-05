@@ -9,7 +9,9 @@ types = [
 constants = [
     'INTEGER',
     'REAL_NUMBER',
-    'STRING'
+    'STRING',
+    'TRUE',
+    'FALSE'
 ]
 
 reserved = {
@@ -39,6 +41,8 @@ reserved = {
     'in_int': 'IN_INT',
     'print': 'PRINT',
     'len': 'LEN',
+    'true': 'TRUE',
+    'false': 'FALSE',
 }
 
 special_chars = [
@@ -51,10 +55,6 @@ special_chars = [
 
 
 parser_operators = [
-    'PLUS',
-    'MINUS',
-    'TIMES',
-    'DIVIDE',
     'MOD',
     'EQUALS',
     'NOT_EQUALS',
@@ -62,14 +62,12 @@ parser_operators = [
     'LESS_THAN_EQUALS',
     'GREATER_THAN',
     'GREATER_THAN_EQUALS',
-    'AND',
     'OR',
     'NOT',
     'ADDITION_ASSIGNMENT',
     'SUBTRACTION_ASSIGNMENT',
     'MULTIPLICATION_ASSIGNMENT',
     'DIVISION_ASSIGNMENT',
-    'BITWISE_AND',
     'BITWISE_OR',
     'BITWISE_XOR',
 ]
@@ -117,7 +115,7 @@ tokens = [
     'STRING',
     'IDENTIFIER',
     'COMMENT',
-    'SPACE'
+    'SPACE',
 ]
 
 tokens += list(reserved.values()) + special_chars + operators

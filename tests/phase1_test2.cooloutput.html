@@ -1,0 +1,870 @@
+<html>
+ <head>
+  <style>
+   .background {
+        background-color: #222222;
+    }
+    .reserved_keyword {
+        color: #FC618D;
+    }
+    .identifier {
+        color: #FFFFFF;
+    }
+    .integer_number {
+        color: #F59762;
+    }
+    .float_number {
+        color: #F59762;
+        font-style: italic;
+    }
+    .string {
+        color: #FCE566;
+    }
+
+    .special_char {
+        color: #EE82EE;
+        font-style: italic;
+    }
+
+    .comment {
+        color: #69676C;
+    }
+
+    .operator {
+        color: #00FFFF;
+    }
+
+    .error {
+        color: #FF0000;
+    }
+  </style>
+ </head>
+ <body class="background">
+  <span class="comment">
+   // Main class
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="reserved_keyword">
+   class
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   Main
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   {
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span class="operator">
+   [
+  </span>
+  <span class="operator">
+   ]
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   items
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   void
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   printArray
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   {
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   for
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   0
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   &lt;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   100
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   ++
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   print
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="identifier">
+   items
+  </span>
+  <span class="operator">
+   [
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   ]
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   rof
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;
+  </span>
+  <span class="operator">
+   }
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="comment">
+   /* main
+   <br>
+   method
+   <br>
+   */
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   main
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   {
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   j
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span class="operator">
+   [
+  </span>
+  <span class="operator">
+   ]
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   rawItems
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   arrayLenInHex
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="identifier">
+   arrayLenInHex
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="float_number">
+   100.0
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="identifier">
+   rawItems
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   new
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   Array
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span class="operator">
+   ,
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   arrayLenInHex
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   dummyScientificNumber
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="identifier">
+   dummyScientificNumber
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="float_number">
+   1020.0
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   print
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="string">
+   "Please enter random numbers!\tWe just print them!"
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   print
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="string">
+   "Max numbers counter: 100,\n(Enter \"-1\"to end sooner.)"
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   for
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span class="integer_number">
+   0
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   &lt;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   arrayLenInHex
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   +
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   1
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   let
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   int
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   x
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="identifier">
+   x
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   in_int
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   if
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="identifier">
+   x
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   ==
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="integer_number">
+   -1
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="reserved_keyword">
+   then
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   break
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   else
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="identifier">
+   rawItems
+  </span>
+  <span class="operator">
+   [
+  </span>
+  <span class="identifier">
+   i
+  </span>
+  <span class="operator">
+   ]
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="operator">
+   =
+  </span>
+  <span>
+   &nbsp;
+  </span>
+  <span class="identifier">
+   x
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   fi
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="reserved_keyword">
+   rof
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="identifier">
+   printArray
+  </span>
+  <span class="operator">
+   (
+  </span>
+  <span class="operator">
+   )
+  </span>
+  <span class="operator">
+   ;
+  </span>
+  <span class="special_char">
+   <br>
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="comment">
+   /* Undefined Token (for example a single backslash "\" is undefined) */
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="special_char">
+   \
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span>
+   &nbsp;&nbsp;
+  </span>
+  <span class="operator">
+   }
+  </span>
+  <span class="special_char">
+   <br>
+  </span>
+  <span class="operator">
+   }
+  </span>
+ </body>
+</html>
